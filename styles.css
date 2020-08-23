@@ -1,0 +1,232 @@
+body {
+  background-color: black;
+  margin: 0px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+  background-image: url("./bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: 400px;
+}
+.container {
+  /* border: 1px solid blue; */
+  width: 85%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+nav ul {
+  padding-top: 2em;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: flex-end;
+}
+nav li {
+  margin-left: 2em;
+}
+nav a {
+  color: red;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+#contact {
+  margin-right: 6em;
+}
+.logo {
+  height: 120px;
+  width: 140px;
+  margin-top: -5.5em;
+  margin-left: 2em;
+}
+#mj {
+  color: red;
+  margin-top: -4.7em;
+  margin-left: 8em;
+}
+#aj1 {
+  color: white;
+  margin-top: -1.5em;
+  margin-left: 11.4em;
+}
+#cover {
+  max-width: 100%;
+}
+.information {
+  word-spacing: 0.2em;
+  color: white;
+  background-color: grey;
+  opacity: 0.5;
+}
+.information h4 {
+  font-style: italic;
+  padding: 0.3em;
+  padding-left: 1em;
+  margin-bottom: 0;
+  margin-top: -2.3em;
+}
+input {
+  float: right;
+  margin-right: 2em;
+  margin-top: -2em;
+  background-color: red;
+}
+/* .info {
+  display: flex;
+} */
+.left {
+  float: left;
+  width: 75%;
+}
+.left img {
+  height: 50px;
+  margin-bottom: -3.8em;
+  margin-left: 18em;
+}
+.left h3 {
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-align: center;
+  color: red;
+}
+.left p {
+  color: white;
+}
+.right {
+  float: left;
+  text-align: center;
+  width: 25%;
+}
+#triangle {
+  display: inline-block;
+  font-size: 4rem;
+  color: silver;
+  position: relative;
+  left: -1.4em;
+}
+.about {
+  border-radius: 10px;
+  background-color: silver;
+  margin: 2em;
+  width: 80%;
+  height: 290px;
+}
+.about h3 {
+  padding-top: 0.5em;
+  color: red;
+  margin-bottom: 0.3em;
+}
+.about img {
+  margin-left: -1.5em;
+  height: 70px;
+  border: 2px solid red;
+}
+.about p {
+  margin-top: 0.2em;
+  padding-left: 2em;
+  text-align: left;
+  margin-bottom: 0.3em;
+}
+.about a {
+  padding-left: 0.5em;
+  font-size: 1.5rem;
+  color: red;
+}
+.tweet,
+.pictures {
+  width: 30%;
+  float: left;
+  color: white;
+}
+.pictures img {
+  display: inline-block;
+  height: 80px;
+  width: 85px;
+}
+.teammates {
+  width: 30%;
+  float: left;
+  margin-left: 3em;
+  color: white;
+}
+.teammates li {
+  float: left;
+  margin-left: 2em;
+}
+
+/* Transitions-Transforms */
+.logo:hover {
+  transition-property: all;
+  transition-duration: 1s;
+  transition-delay: 0.1s;
+  transition-timing-function: linear;
+  transform: rotate(360deg);
+}
+#cover:hover {
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-delay: 0s;
+  transition-timing-function: ease-in;
+  transform: scale(0.5, 0.5);
+}
+.pictures img:hover {
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-delay: 0s;
+  transition-timing-function: linear;
+  transform: scale(2, 2);
+}
+.left img:hover {
+  transition-property: all;
+  transition-duration: 0.8s;
+  transition-delay: 0.2s;
+  transition-timing-function: ease-out;
+  transform: translate(300px, 0px);
+}
+.right img:hover {
+  transition-property: all;
+  transition-duration: 1s;
+  transition-delay: 0.1s;
+  transition-timing-function: ease-in-out;
+  transform: skewX(40deg);
+}
+
+/* Animations */
+.about a:hover {
+  animation-name: social;
+  animation-duration: 5s;
+  animation-delay: 0.1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+}
+@keyframes social {
+  0% {
+    color: blue;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    font-size: 2em;
+    padding: 1em;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    color: red;
+  }
+}
+nav a:hover {
+  animation: bord 3s linear 0.1s 1 normal forwards;
+}
+@keyframes bord {
+  0% {
+    border-bottom: 4px solid silver;
+  }
+  100% {
+    border-bottom: 4px solid red;
+  }
+}
